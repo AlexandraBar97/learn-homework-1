@@ -14,13 +14,18 @@
   и выводя на экран результаты
 
 """
-
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
-    
-if __name__ == "__main__":
-    main()
+first_string = input('Введите первую строку: ')
+second_string = input('Введите вторую строку: ')
+def strings(first_string, second_string):
+    if first_string is str and second_string is str:
+        return(first_string, second_string)
+    elif first_string == second_string:
+        return ('1')
+    elif len(first_string) > len(second_string):
+        return('2')
+    elif len(first_string) != len(second_string) and second_string == 'learn':
+        return('3')
+    else:
+        return('0')
+result = strings(first_string, second_string)
+print(result)
