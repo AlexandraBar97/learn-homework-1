@@ -9,12 +9,12 @@
   и завершала работу при помощи оператора break
     
 """
-
-def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
-if __name__ == "__main__":
-    hello_user()
+user = input('Как дела? ')
+def hello_user(user):
+  try:
+    while True:
+      if user == 'Хорошо':
+        break
+  except:
+    print('Пока')
+    break
