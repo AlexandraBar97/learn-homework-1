@@ -17,7 +17,7 @@
 first_string = input('Введите первую строку: ')
 second_string = input('Введите вторую строку: ')
 def strings(first_string, second_string):
-    if first_string is str and second_string is str:
+    if first_string is str and second_string is str: #как проверить на принадлежность к строкам, чтобы было, что, если не принадлежит, то ноль 
         return(first_string, second_string)
     elif first_string == second_string:
         return ('1')
